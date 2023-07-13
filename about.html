@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id" type="text/html">
+<head>
+  <title>Biodata</title>
+  <link rel="preload" href="./main.css" as="style"> <!-- Style Loading Terlebih dahulu -->
+  <style>
+    /*
+  > Warning !
+
+  Jangan gunakan id (#) untuk membuat styles, disarankan menggunakan attribute
+*/
+body{
+    background-color: rgb(0, 0, 0);
+}
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 24px;
+  color: rgb(246, 246, 246);
+ filter: drop-shadow(10px 8px 7px rgba(1, 1, 1, 0.987));
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.fx-box {
+  display: flex;
+  align-items: center;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.profile-pic img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.biodata table {
+  width: 100%;
+  margin-bottom: 20px;
+  border: 1px solid #e2e2e2;
+  color: rgb(251, 247, 239);
+  box-shadow: 0 0 10px rgba(21, 184, 184, 0.601);
+}
+
+.biodata td {
+  padding: 5px;
+  border: 1px solid #137f9b;
+  border-radius: 4px;
+}
+
+
+.perkenalan {
+  margin-top: 40px;
+}
+
+.perkenalan h2 {
+  margin-bottom: 10px;
+  color: #fff;
+  filter: drop-shadow(10px 8px 7px rgba(48, 45, 52, 0.734));
+}
+
+.perkenalan p {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  filter: drop-shadow(10px 5px 5px rgba(17, 208, 225, 0.987));
+  margin-bottom: 10px;
+  border: 10px solid #000;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.button-selection {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.buttons a {
+  display: inline-block;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+  background-color: #009688;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.buttons a:hover {
+  background-color: #00796b;
+}
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 types-text="header" class="fadeIn">BIODATA </h1>
+    <div class="fx-box">
+      <div class="profile-pic">
+        <img width="100%" src="./img/profile.jpg" loading="lazy" /> <!-- Gunakan atribute loading="lazy" untuk memuat media di akhir atau tengah -->
+      </div>
+      <div class="biodata">
+        <table>
+          <tr>
+            <td>Nama Lengkap</td>
+            <td>Harris Maulana S</td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>Laki - Laki</td>
+          </tr>
+          <tr>
+            <td>Tempat Lahir</td>
+            <td>Malang</td>
+          </tr>
+          <tr>
+            <td>Alamat</td>
+            <td>Kertarejasa Gg.2 No.111, Singosari, Malang</td>
+          </tr>
+          <tr>
+          </tr>
+        </table>
+      </div>
+    </div>
+    <div class="perkenalan">
+      <h2 style="margin-right: 2;">Perkenalan Singkat</h2>
+      <p align="justify">Nama saya Harris. Saya berusia 16 tahun. Saya Murid Dari SMKN 2 Singosari. Hobi saya adalah melakukan ngoding dan mendengarkan musik, 
+        karena dengan ngoding dapat menghasilkan sesuatu projek yang bisa berguna untuk diri sendiri dan orang lain dan juga bisa sebagai pekerjaan</p>
+      <p align="justify">Saya melakukan ngoding untuk menghasilkan sesuatu yang berguna untuk saya sendiri ataupun untuk orang. Saya bercita-cita sebagai programmer. semoga cita cita saya berhasil saya raih.</p>
+      <p align="justify">Sekian dari saya. Apabila ada yang ingin di tanyakan bisa hubungi saya di bawah :v</p>
+      <div class="button-selection">
+        <h2>Contact Me !</h2>
+        <div class="buttons">
+          <a href="https://www.facebook.com/profile.php?id=100017161772382&sk=about">Facebook</a>
+          <a href="https://instagram.com/_arisafazi">Instagram</a>
+          <a href="https://web.telegram.org/k/#@rhzecode">Telegram</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
